@@ -49,7 +49,9 @@ header h1 {
 .dark-mode h1 {
   color: rgb(230, 230, 230);
 }
-
+.theme-changer-btn {
+  font-size: 1.3rem;
+}
 .notes-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
