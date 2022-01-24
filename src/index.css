@@ -38,6 +38,27 @@ code {
   justify-content: space-between;
 }
 
+.note.add-note {
+  background-color: #67d7cc;
+}
+
+.add-note textarea {
+  border: none;
+  resize: none;
+  outline: none;
+  background-color: inherit;
+}
+.add-note .save-note-btn {
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+  transition: all 0.5s;
+}
+.add-note .save-note-btn:hover {
+  cursor: pointer;
+  background-color: #ededed;
+}
 .note-footer {
   display: flex;
   margin-top: 1rem;
