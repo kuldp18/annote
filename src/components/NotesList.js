@@ -1,15 +1,12 @@
 import React from 'react';
 import Note from './Note';
 
-function NotesList() {
+function NotesList({ notes }) {
   return (
     <div className="notes-list">
-      <Note />
-      <Note />
-      <Note />
-      <Note />
-      <Note />
-      <Note />
+      {notes.map((note) => {
+        return <Note {...note} key={note.id} />;
+      })}
     </div>
   );
 }
