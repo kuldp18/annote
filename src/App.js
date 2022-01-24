@@ -29,9 +29,14 @@ function App() {
     };
     setNotes([...notes, newNote]);
   };
+
+  const deleteNote = (id) => {
+    const newNotes = notes.filter((note) => note.id !== id);
+    setNotes(newNotes);
+  };
   return (
     <div className="container">
-      <NotesList notes={notes} addNote={addNote} />
+      <NotesList notes={notes} addNote={addNote} deleteNote={deleteNote} />
     </div>
   );
 }
