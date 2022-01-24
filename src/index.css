@@ -39,6 +39,10 @@ header h1 {
   min-height: 100vh;
 }
 
+.dark-container {
+  transition: all 0.3s;
+}
+
 .dark-mode {
   background-color: rgb(27, 27, 27);
 }

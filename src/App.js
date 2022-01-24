@@ -39,7 +39,7 @@ function App() {
     setNotes(newNotes);
   };
   return (
-    <div className={isDarkMode ? 'dark-mode' : ''}>
+    <div className={isDarkMode ? 'dark-container dark-mode' : 'dark-container'}>
       <div className="container">
         <Header setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode} />
         <Search handleSearchNote={setSearchText} />
