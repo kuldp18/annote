@@ -77,3 +77,19 @@ code {
   justify-content: space-between;
   align-items: center;
 }
+
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(223, 223, 223);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5rem;
+}
+.search .search-input {
+  outline: none;
+  border: none;
+  background-color: inherit;
+  width: 100%;
+}
