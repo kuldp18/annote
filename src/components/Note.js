@@ -4,8 +4,8 @@ function Note() {
   return (
     <div className="note">
       <span>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi ducimus
-        libero animi iste esse eum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sit iusto
+        culpa eum, quo nostrum.
       </span>
       <div className="note-footer">
         <small>24/01/22</small>
