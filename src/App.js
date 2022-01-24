@@ -19,9 +19,20 @@ function App() {
       date: '21/01/2022',
     },
   ]);
+
+  const addNote = (text) => {
+    if (!text) return;
+    const date = new Date();
+    const newNote = {
+      id: nanoid(),
+      text,
+      date: date.toLocaleDateString('en-GB'),
+    };
+    setNotes([...notes, newNote]);
+  };
   return (
     <div className="container">
-      <NotesList notes={notes} />
+      <NotesList notes={notes} addNote={addNote} />
     </div>
   );
 }

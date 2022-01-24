@@ -1,10 +1,10 @@
 import React from 'react';
 import Note from './Note';
 import AddNote from './AddNote';
-function NotesList({ notes }) {
+function NotesList({ notes, addNote }) {
   return (
     <div className="notes-list">
-      <AddNote />
+      <AddNote addNote={addNote} />
       {notes.map((note) => {
         return <Note {...note} key={note.id} />;
       })}
