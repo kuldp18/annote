@@ -9,7 +9,7 @@ function App() {
   const [searchText, setSearchText] = useState('');
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // Get notes from local storage
+  // Get notes from local storage(should be done first)
   useEffect(() => {
     const data = localStorage.getItem('annote-data');
     if (data) {
