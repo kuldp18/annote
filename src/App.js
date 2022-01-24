@@ -21,6 +21,7 @@ function App() {
     },
   ]);
 
+  const [searchText, setSearchText] = useState('');
   const addNote = (text) => {
     const date = new Date();
     const newNote = {
@@ -37,8 +38,14 @@ function App() {
   };
   return (
     <div className="container">
-      <Search />
-      <NotesList notes={notes} addNote={addNote} deleteNote={deleteNote} />
+      <Search handleSearchNote={setSearchText} />
+      <NotesList
+        notes={notes.filter((note) =>
+          note.text.toLowerCase().includes(searchText)
+        )}
+        addNote={addNote}
+        deleteNote={deleteNote}
+      />
     </div>
   );
 }
