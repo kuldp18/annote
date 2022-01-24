@@ -21,7 +21,7 @@ function App() {
   ]);
 
   const addNote = (text) => {
-    if (!text) return;
+    if (text.trim.length === 0) return;
     const date = new Date();
     const newNote = {
       id: nanoid(),
