@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BiSearchAlt } from 'react-icons/bi';
 function Search({ handleSearchNote }) {
   return (
