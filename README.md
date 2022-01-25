@@ -1,5 +1,7 @@
 # Annote - a note taking app.
 
+## Deployed App : https://annote.netlify.app
+
 ## Available Scripts
 
 In the project directory, you can run:
