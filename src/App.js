@@ -40,7 +40,7 @@ function App() {
     <div className={isDarkMode ? 'dark-container dark-mode' : 'dark-container'}>
       <div className="container">
         <Header setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode} />
-        <Search handleSearchNote={setSearchText} />
+        <Search handleSearchNote={setSearchText} searchText={searchText} />
         <NotesList
           notes={notes.filter((note) =>
             note.text.toLowerCase().includes(searchText)

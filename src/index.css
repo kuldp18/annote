@@ -51,6 +51,8 @@ header h1 {
 }
 .theme-changer-btn {
   font-size: 1.3rem;
+  border: none;
+  outline: none;
 }
 .notes-list {
   display: grid;
